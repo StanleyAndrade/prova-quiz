@@ -1,3 +1,187 @@
+<html>
+ 
+<div id="substituir">
+    <img src="https://techsos.com.br/arquivos_ead/sualogo-verde.png" width="200"></img>
+</div>
+
+<main>
+    <article>
+        <button id="btn_modulo" onclick="modulounico()">Módulo Único</button><br>
+        <button id="btn_modulo" onclick="modulo1()">Módulo 1</button><br>
+        <button id="btn_modulo" onclick="modulo2()">Módulo 2</button><br>
+        <button id="btn_modulo" onclick="prova()">Fazer Prova</button><br>
+        <button id="btn_voltar" onclick="voltar()">Voltar</button><br>
+    </article>
+</main>
+
+<script>
+
+//Função do Botão voltar
+function voltar() {
+    location.reload();
+    window.scroll(top)
+}
+
+//MÓDULOS ABAIXO
+
+//MODULO ÚNICO mostra botão de video e apostila
+function modulounico() {
+    var botao_video__modulounico = '<button id="insidemodulo1" onclick="botao_video__modulounico()">Vídeo Aula</button>';
+    var botao_apostila_modulounico = '<button id="insidemodulo1" onclick="botao_apostila_modulounico()">Ler Apostila</button>'
+    document.getElementById('substituir').innerHTML = botao_video__modulounico + botao_apostila_modulounico;
+    provadesaparece()
+}
+//MODULO ÚNICO Botão da Apostila
+function botao_apostila_modulounico () {
+    var varmodulounico = ` 
+    <h2>Como ser&aacute; o futuro da educa&ccedil;&atilde;o?</h2>
+
+<p>Vemos iniciativas inovadoras em diferentes setores do mercado como nas fintechs, nos aplicativos de mobilidade e nos e-commerces, todas apoiadas pelo desenvolvimento da tecnologia.&nbsp;</p>
+
+<p>Se todas essas &aacute;reas est&atilde;o se desenvolvendo e educa&ccedil;&atilde;o n&atilde;o, como podemos&nbsp;<strong>preparar as pessoas para trabalhar nessas empresas</strong>?</p>
+
+<p>As salas de aula seguem o mesmo padr&atilde;o h&aacute; 200 anos e, mesmo com o uso de novas tecnologias, o ensino continua basicamente o mesmo.&nbsp;</p>
+
+<p>O conte&uacute;do pode ser passado por meio do Zoom, mas a premissa continua sendo a mesma: o professor tem todo o conhecimento sobre as mat&eacute;rias e sobre como ensinar, o aluno s&oacute; est&aacute; ali para receber a mesma informa&ccedil;&atilde;o que &eacute; passada para o restante da turma, sem levar em considera&ccedil;&atilde;o seu&nbsp;<strong>desenvolvimento pessoal e as experi&ecirc;ncias</strong>&nbsp;que carrega consigo para dentro da sala de aula.</p>
+
+<p>&Eacute; uma ruptura muito grande sair de uma escola e entrar em uma empresa tipo startup por exemplo. Na primeira h&aacute; pouco incentivo &agrave; tomada de risco, &agrave; criatividade e &agrave; autonomia, enquanto na segunda essas habilidades s&atilde;o geralmente o que faz um profissional se destacar e conseguir alavancar sua carreira.&nbsp;</p>
+
+<p>Numa startup existe bastante espa&ccedil;o para experimenta&ccedil;&atilde;o, mudan&ccedil;as r&aacute;pidas, tentativa e erro e trabalho em equipe. Enquanto na maioria das escolas &eacute; valorizado o acerto, as notas e a individualidade.&nbsp;</p>
+
+    `;
+    document.getElementById('substituir').innerHTML = varmodulounico;
+    provadesaparece()
+    
+}
+//MODULO ÚNICO Botão do Vídeo
+function botao_video__modulounico () {
+    var varmodulounico = '<iframe src="https://drive.google.com/file/d/1RTATB9SBswHwJsT1cVXhL8beissRk_9r/preview" width="640" height="480" allow="autoplay"></iframe>';
+    document.getElementById('substituir').innerHTML = varmodulounico;
+    provadesaparece()
+}
+//MODULO 1 mostra botão de video e apostila
+function modulo1() {
+    var botao_video_modulo1 = '<button id="insidemodulo1" onclick="botao_video_modulo1()">Vídeo Aula</button>';
+    var botao_apostila_modulo1 = '<button id="insidemodulo1" onclick="botao_apostila_modulo1()">Ler Apostila</button>'
+    document.getElementById('substituir').innerHTML = botao_video_modulo1 + botao_apostila_modulo1;
+    provadesaparece()
+}
+//MODULO 1 Botão da Apostila
+function botao_apostila_modulo1 () {
+    var varmodulo1 = ` 
+    <h2>Como ser&aacute; o futuro da educa&ccedil;&atilde;o?</h2>
+
+<p>Vemos iniciativas inovadoras em diferentes setores do mercado como nas fintechs, nos aplicativos de mobilidade e nos e-commerces, todas apoiadas pelo desenvolvimento da tecnologia.&nbsp;</p>
+
+<p>Se todas essas &aacute;reas est&atilde;o se desenvolvendo e educa&ccedil;&atilde;o n&atilde;o, como podemos&nbsp;<strong>preparar as pessoas para trabalhar nessas empresas</strong>?</p>
+
+<p>As salas de aula seguem o mesmo padr&atilde;o h&aacute; 200 anos e, mesmo com o uso de novas tecnologias, o ensino continua basicamente o mesmo.&nbsp;</p>
+
+<p>O conte&uacute;do pode ser passado por meio do Zoom, mas a premissa continua sendo a mesma: o professor tem todo o conhecimento sobre as mat&eacute;rias e sobre como ensinar, o aluno s&oacute; est&aacute; ali para receber a mesma informa&ccedil;&atilde;o que &eacute; passada para o restante da turma, sem levar em considera&ccedil;&atilde;o seu&nbsp;<strong>desenvolvimento pessoal e as experi&ecirc;ncias</strong>&nbsp;que carrega consigo para dentro da sala de aula.</p>
+
+<p>&Eacute; uma ruptura muito grande sair de uma escola e entrar em uma empresa tipo startup por exemplo. Na primeira h&aacute; pouco incentivo &agrave; tomada de risco, &agrave; criatividade e &agrave; autonomia, enquanto na segunda essas habilidades s&atilde;o geralmente o que faz um profissional se destacar e conseguir alavancar sua carreira.&nbsp;</p>
+
+<p>Numa startup existe bastante espa&ccedil;o para experimenta&ccedil;&atilde;o, mudan&ccedil;as r&aacute;pidas, tentativa e erro e trabalho em equipe. Enquanto na maioria das escolas &eacute; valorizado o acerto, as notas e a individualidade.&nbsp;</p>
+
+    `;
+    document.getElementById('substituir').innerHTML = varmodulo1;
+}
+//MODULO 1 Botão do Vídeo
+function botao_video_modulo1 () {
+    var varmodulo1 = '<iframe src="https://drive.google.com/file/d/1RTATB9SBswHwJsT1cVXhL8beissRk_9r/preview" width="640" height="480" allow="autoplay"></iframe>';
+    document.getElementById('substituir').innerHTML = varmodulo1;
+}
+//FIM DOS MÓDULOS
+
+//Funções Relacionas À Prova
+
+//Faz a prova aparecer e  chama a função que limpa o 'substituir'
+function prova(prova) {
+    var display = document.getElementById('prova').style.display;
+    if (display == "inline-block") {
+    document.getElementById('prova').style.display = 'none';
+    limpaSubstituir()
+    } else {
+    document.getElementById('prova').style.display = 'inline-block';
+    limpaSubstituir()
+    }
+}
+
+//Faz a prova desaparecer
+function provadesaparece () {
+    var display = document.getElementById('prova').style.display;
+    if (display == "inline-block") {
+    document.getElementById('prova').style.display = 'none';
+    } else {
+    document.getElementById('prova').style.display = 'none';
+    }
+}
+//Limpa o 'substituir'
+function limpaSubstituir() {
+    document.getElementById('substituir').innerHTML = ''
+}
+</script>
+
+<!--COMEÇO DO CSS-->
+<style>
+    main { 
+    display:block;
+    flex-direction: row; /*coloca imagem e texto lado a lado*/
+    margin-top: 50px;
+    }
+    
+    button{ /*Deixa botão preto com letra branca*/
+        margin: 5px;
+        background-color: black;
+        border-radius: 50px;
+        color: white;
+        width: 200px
+    }
+    
+    article{
+        text-align: center;
+    }
+    
+    #substituir{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #prova{ /*Oculta a prova*/
+        display: none;
+        width: 100%;
+    }
+
+    /*ocuta botão refazer*/
+
+    /*deixa a mostra botão finalizar prova. Cor branca, letra preta*/
+    #btn_corrigir{
+        display: null;
+        align-items: center;
+        background-color: white;
+        border-radius: 50px;
+        color: black;
+    }
+
+    h3{/*Centraliza título da prova. E deixa letra branca*/
+        text-align: center;
+        color: white;
+    }
+      
+    #divbotao{
+        text-align: center;
+    }
+    
+    body{ /*Coloca a cor do texto da página toda em branco*/
+        color: white;
+    }    
+    </style>
+<!--FIM DO CSS-->
+
+
+<!--PROVA ABAIXO-->
+
 <main id="prova">
     <head>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -336,8 +520,7 @@
                 if ( total >= 2) {
                     window.scroll(top)
                     var botoes = `
-                    <button  id="btn_baixarProvaPDF" onclick="window.print(); return false" style="cursor: pointer;" value="">Baixar Prova em PDF</button><br><br>
-                    <button  id="btn_Certificado" onclick="" value="">Solicitar Certificado</button><br><br>
+                    <button  id="btn_Certificado" onclick="window.open('https://ead.techsos.com.br/?page_id=578', '_self')" value="">Solicitar Certificado</button><br><br>
                     <button  id="btn_refazerprova" onclick="window.location.reload()" value="">Refazer Prova</button>
                     `
                     document.getElementById("subtitulo").innerHTML = ("Você foi aprovado!");
@@ -388,9 +571,6 @@
                 );
             });
 
-            function GerarCertificado() {
-                var formCertificado = ``
-            }
         </script>   
     </body>
     <style>
@@ -419,6 +599,7 @@
     
     #substituir{
         text-align: center;
+
     }
 
     #prova{ /*Oculta a prova*/
@@ -436,7 +617,7 @@
 
     h3{/*Centraliza título da prova. E deixa letra branca*/
         text-align: center;
-        color: black; /*colocar branco depois*/
+        color: white; /*colocar branco depois*/
     }
       
     #divbotao{
@@ -444,7 +625,7 @@
     }
     
     body{ /*Coloca a cor do texto da página toda em branco*/
-        color: black; /*Colocar white depois de finalizar*/
+        color: white; /*Colocar white depois de finalizar*/
     }
     label{
         display: inline-flex;
@@ -463,6 +644,12 @@
     }  
     #botoes_Apos_Finalizar{
         text-align: center;
+    }
+    h2{
+        color: white;
+    }
+    p{
+        text-align: start;
     }
     @media print {
         #body * {
@@ -489,8 +676,13 @@
         textarea {
         width: 300px;
         height: 200px;
+        }
+        #prova{
+            padding: 5%; 
+        }
     }
         
-    }
+
     </style>
 </main>
+</html>
